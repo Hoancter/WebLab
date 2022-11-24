@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #f5f7fa;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+.container {
+	display: flex;
+}
+.side {
+	min-width: 320px;
+	height: 200px;
+	background-color: #fff;
+	height: 100%;
+	min-height: 100vh;
+	border-right: 1px solid #e1e1e1;
+}
+.content {
+	width: 100%;
+	display: flex;
+	padding: 20px 0;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.container .card {
+	position: relative;
+	height: 450px;
+}
+
+.content .card .user {
+	width: 380px;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.5);
+}
+
+.content .card .user .profile {
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+}
+
+.content .card .user .name {
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-shadow: 1px 1px 5px #444;
+}
+
+.content .card .user .name span {
+	font-size: 26px;
+}
+
+.content .card .local {
+	display: flex;
+	align-items: center;
+	padding: 0 0 20px 0;
+}
+
+.content .card .local i {
+	margin: 5px 0;
+	color: #fff;
+}
+
+.content .card .local span {
+	color: #fff;
+	padding: 0 10px;
+	text-shadow: 1px 1px 5px #444;
+}
+
+.content .buttons {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+}
+.content .buttons .return i {
+	color: #d7f800;
+	font-size: 15px;
+}
+.content .buttons .flash i {
+	color: #fb00af;
+	font-size: 15px;
+}
+.content .buttons .no i {
+	color: #ff0000;
+	font-size: 15px;
+}
+
+.content .buttons .star i {
+	color: #2bb1ff;
+	font-size: 15px;
+}
+
+.content .buttons .heart i {
+	color: #11e298;
+	font-size: 15px;
+}
+.content .buttons .return,
+.content .buttons .flash,
+.content .buttons .no,
+.content .buttons .star,
+.content .buttons .heart {
+	background-color: #fff;
+	width: 70px;
+	height: 70px;
+	box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 70px;
+	margin: 4px;
+	transition: 0.2s transform;
+}
+.content .buttons .return:hover,
+.content .buttons .flash:hover,
+.content .buttons .no:hover,
+.content .buttons .star:hover,
+.content .buttons .heart:hover {
+	transform: scale(1.1);
+}
+
+.content .buttons .star {
+	width: 60px;
+	height: 60px;
+}
+.content .buttons .heart {
+	width: 60px;
+	height: 60px;
+}
+.content .buttons .no {
+	width: 60px;
+	height: 60px;
+}
+.content .buttons .return {
+	width: 60px;
+	height: 60px;
+}
+.content .buttons .flash {
+	width: 60px;
+	height: 60px;
+}
